@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/finalOutcome"
+        android:layout_width="274dp"
+        android:layout_height="47dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Chocolate House"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#63AEA7"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="218dp"
+        android:layout_height="205dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <Button
+        android:id="@+id/Decidebtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="424dp"
+        android:layout_height="56dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Decide!"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalOutcome"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/AddFoodtxt"
+        android:layout_width="206dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:fontFamily="@font/muli_bold"
+        android:hint="Add your preferences"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/addFoodbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalOutcome"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/addFoodbtn"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="228dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Add preference"
+        android:textColor="#FBFAFA"
+        app:backgroundTint="#6AB4BE"
+        app:iconTint="#51A4AE"
+        app:layout_constraintBottom_toTopOf="@+id/Decidebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/finalOutcome"
+        app:layout_constraintVertical_bias="0.655" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
